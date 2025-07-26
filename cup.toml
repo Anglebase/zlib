@@ -1,0 +1,19 @@
+[project]
+name = "zlib"
+version = "0.1.0"
+type = "static"
+
+[build]
+jobs = 0
+languages = ["C"]
+
+[examples]
+includes = ["examples/include"]
+defines = ["_CRT_SECURE_NO_WARNINGS"]
+
+[tests]
+includes = ["include"]
+defines = ["_CRT_SECURE_NO_WARNINGS"]
+
+[generator."Visual Studio 17 2022"]
+defines = ["_CRT_SECURE_NO_WARNINGS"]
